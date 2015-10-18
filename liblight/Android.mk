@@ -1,4 +1,4 @@
-# Copyright (C) 2010 The AndroidFire Project
+# Copyright 2013 The Android Open Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,17 +12,13 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# Release name
-PRODUCT_RELEASE_NAME := hmnote1w
+LOCAL_PATH:= $(call my-dir)
+include $(CLEAR_VARS)
 
-# Inherit some common CM stuff.
-$(call inherit-product, vendor/cm/config/common_full_phone.mk)
+LOCAL_SRC_FILES := lights.c
+LOCAL_MODULE_PATH := $(TARGET_OUT_SHARED_LIBRARIES)/hw
+LOCAL_SHARED_LIBRARIES := liblog
+LOCAL_MODULE := lights.mt6592
+LOCAL_MODULE_TAGS := optional
 
-# Inherit device configuration
-$(call inherit-product, device/xiaomi/hmnote1w/device.mk)
-
-PRODUCT_DEVICE := hmnote1w
-PRODUCT_NAME := cm_hmnote1w
-PRODUCT_BRAND := Xiaomi
-PRODUCT_MODEL := hmnote1w
-PRODUCT_MANUFACTURER := Xioami
+include $(BUILD_SHARED_LIBRARY)

@@ -1,4 +1,5 @@
-# Copyright (C) 2010 The AndroidFire Project
+#
+# Copyright (C) 2008 The Android Open Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -11,18 +12,15 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
+#
+LOCAL_PATH := $(my-dir)
 
-# Release name
-PRODUCT_RELEASE_NAME := hmnote1w
+include $(CLEAR_VARS)
 
-# Inherit some common CM stuff.
-$(call inherit-product, vendor/cm/config/common_full_phone.mk)
+LOCAL_CFLAGS += $(LIBLOG_CFLAGS)
+LOCAL_MODULE := libxlog
+LOCAL_SRC_FILES := xlog.c mtkaudio.cpp
+LOCAL_C_INCLUDES += frameworks/av/media/mtp/ system/core/include/ frameworks/rs/server/ frameworks/av/include/ hardware/libhardware/include/
+LOCAL_SHARED_LIBRARIES := libcutils liblog libutils libbinder
 
-# Inherit device configuration
-$(call inherit-product, device/xiaomi/hmnote1w/device.mk)
-
-PRODUCT_DEVICE := hmnote1w
-PRODUCT_NAME := cm_hmnote1w
-PRODUCT_BRAND := Xiaomi
-PRODUCT_MODEL := hmnote1w
-PRODUCT_MANUFACTURER := Xioami
+include $(BUILD_SHARED_LIBRARY)

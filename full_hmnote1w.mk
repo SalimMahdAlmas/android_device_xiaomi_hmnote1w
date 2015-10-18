@@ -15,4 +15,10 @@
 
 LOCAL_PATH 					:= device/xiaomi/hmnote1w
 
+PRODUCT_RELEASE_NAME := hmnote1w
 
+PRODUCT_DEVICE := hmnote1w
+PRODUCT_NAME := hmnote1w
+PRODUCT_BRAND := Xiaomi
+PRODUCT_MODEL := hmnote1w
+PRODUCT_MANUFACTURER := Xioami
