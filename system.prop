@@ -1,3 +1,5 @@
 #
 # AndroidFire
 #
+
+ro.telephony.ril_class=MTKRIL
