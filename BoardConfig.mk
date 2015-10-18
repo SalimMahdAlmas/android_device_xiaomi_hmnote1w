@@ -31,9 +31,22 @@ TARGET_CPU_ABI 					:= armeabi-v7a
 TARGET_CPU_ABI2 				:= armeabi
 ARCH_ARM_HAVE_NEON				:= true
 ARCH_ARM_HAVE_VFP 				:= true
-ARCH_ARM_HAVE_TLS_REGISTER 			:= true
+ARCH_ARM_HAVE_TLS_REGISTER 					:= true
 WITH_DEXPREOPT 					:= true
+TARGET_BOOTLOADER_BOARD_NAME 					:= mt6592
+
+#Kernel
+
+TARGET_USERIMAGES_USE_EXT4 					:=true
+TARGET_USERIMAGES_SPARSE_EXT_DISABLED 					:= false
+BOARD_KERNEL_CMDLINE  				:=
+BOARD_KERNEL_BASE  				:= 0x10000000
+BOARD_KERNEL_PAGESIZE  				:= 2048
 
 #Camera
 
 USE_CAMERA_STUB 				:= true
+
+#RIL
+
+BOARD_RIL_CLASS := ../../../device/mediatek/mt6592/ril/
