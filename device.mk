@@ -14,4 +14,17 @@
 
 LOCAL_PATH 					:= device/xiaomi/hmnote1w
 
+# Overlay
+DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlays
 
+#dpi
+PRODUCT_AAPT_CONFIG := normal hdpi
+
+# Ramdisk
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/rootdir/fstab.mt6592:root/fstab.mt6592 \
+    $(LOCAL_PATH)/rootdir/init.mt6592.rc:root/init.mt6592.rc \
+    $(LOCAL_PATH)/rootdir/init.rc:root/init.rc \
+    $(LOCAL_PATH)/rootdir/init.recovery.mt6592.rc:root/init.recovery.mt6592.rc \
+    $(LOCAL_PATH)/rootdir/init.usb.rc:root/init.usb.rc.rc

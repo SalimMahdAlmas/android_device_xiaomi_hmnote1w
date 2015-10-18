@@ -12,3 +12,15 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+
+#Import Start
+
+
+#Import End
+
+
+PRODUCT_DEVICE := hmnote1w
+PRODUCT_NAME := cm_hmnote1w
+PRODUCT_BRAND := Xiaomi
+PRODUCT_MODEL := hmnote1w
+PRODUCT_MANUFACTURER := Xioami
