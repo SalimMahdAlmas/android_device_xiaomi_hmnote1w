@@ -17,17 +17,33 @@
         <value>1.5</value>
         <value>1.5</value>
     </array>
-    <array name="cpu.speeds">
-
+        <array name="cpu.speeds">
+        <value>300000</value> <!-- 300 MHz CPU speed -->
+        <value>422400</value> <!-- 422.4 MHz CPU speed -->
+        <value>652800</value> <!-- 652.8 MHz CPU speed -->
+        <value>729600</value> <!-- 729.6 MHz CPU speed -->
+        <value>883200</value> <!-- 883.2 MHz CPU speed -->
+        <value>960000</value> <!-- 960.0 MHz CPU speed -->
+        <value>1036800</value> <!-- 1036.8 MHz CPU speed -->
+        <value>1190400</value> <!-- 1190.4 MHz CPU speed -->
+        <value>1267200</value> <!-- 1267.2 MHz CPU speed -->
+        <value>1497600</value> <!-- 1497.6 MHz CPU speed -->
+        <value>1574400</value> <!-- 1574.0 MHz CPU speed -->
+        <value>1728000</value> <!-- 1728.0 MHz CPU speed -->
     </array>
     <item name="cpu.idle">2.0</item>
     <array name="cpu.active">
-        <value>120</value>
-        <value>98</value>
-        <value>75</value>
-        <value>49</value>
+         <value>71</value> <!-- 300 MHz CPU speed -->
+        <value>83</value> <!-- 422.4 MHz CPU speed -->
+        <value>97</value> <!-- 652.8 MHz CPU speed -->
+        <value>106</value> <!-- 729.6 MHz CPU speed -->
+        <value>115</value> <!-- 883.2 MHz CPU speed -->
+        <value>167</value> <!-- 960.0 MHz CPU speed -->
+        <value>213</value> <!-- 1036.8 MHz CPU speed -->
+        <value>249</value> <!-- 1190.4 MHz CPU speed -->
+        <value>263</value> <!-- 1267.2 MHz CPU speed -->
     </array>
-    <item name="battery.capacity">1728</item>
+    <item name="battery.capacity">3100</item>
     <array name="wifi.batchedscan">
         <value>.0002</value>
         <value>.002</value>
